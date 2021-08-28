@@ -8,7 +8,7 @@ import 'package:oex/models/OEXEngine.dart';
 class OEX {
   static const platformMethodChannel = const MethodChannel('khad.im.oex');
 
-  Future<List<OEXEngine>> search() async {
+  static Future<List<OEXEngine>> search() async {
     try {
       List<OEXEngine> list = [];
       final List<dynamic> result = await platformMethodChannel.invokeMethod('search');
