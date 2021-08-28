@@ -23,7 +23,6 @@ class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
-  final OEX oex = OEX();
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -33,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List<OEXEngine> engines = [];
 
   Future<void> getEngines() async {
-    final result = await widget.oex.search();
+    final result = await OEX.search();
     setState(() {
       engines = result;
     });
