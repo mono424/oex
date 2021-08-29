@@ -22,7 +22,7 @@ class OEXEngine {
   OEXEngine(this.packageName, this.name, this.versionCode, this.fileName, this.enginePath);
 
   Future<Stream<String>> start() async {
-    if (_isRunning) throw Exception("Already running.");
+    if (_isRunning) return outStream;
     _outStreamController = new StreamController<String>();
     _errStreamController = new StreamController<String>();
     _process = await Process.start(this.enginePath, []);
