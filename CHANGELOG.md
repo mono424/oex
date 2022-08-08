@@ -1,3 +1,6 @@
+## 0.0.4
+* updated readme
+
 ## 0.0.3
 * targetSdkVersion 31
 * Switched to queries, to request less permissions.
