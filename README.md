@@ -12,7 +12,7 @@ A Flutter Plugin, which lets you search and interact OEX Chess Engines on Androi
 
 ## How to use
 
-### 🔎 Setup
+### 🚀 Setup
 
 Add the dependency to pubspec.yaml.
 
