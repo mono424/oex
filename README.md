@@ -8,7 +8,7 @@ A Flutter Plugin, which lets you search and interact OEX Chess Engines on Androi
 
 ## Screenshot
 
-![screenshot](https://github.com/mono424/oex/blob/main/images/screenshot.png?raw=true)
+![screenshot](https://github.com/mono424/oex/blob/images/screenshot.png?raw=true)
 
 ## How to use
 
