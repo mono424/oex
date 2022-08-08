@@ -1,8 +1,9 @@
 library oex;
 
+export 'package:oex/models/OEXEngine.dart';
+
 import 'package:flutter/services.dart';
 import 'dart:async';
-
 import 'package:oex/models/OEXEngine.dart';
 
 class OEX {

@@ -1,12 +1,56 @@
 # oex
 
-A Flutter Plugin, which lets you search OEX Chess Engines
+A Flutter Plugin, which lets you search and interact OEX Chess Engines on Android
+
+🔎 Discover UCI-Engines
+
+🗣️ Interact with UCI-Engines
 
 ## Screenshot
 
-![screenshot](./images/screenshot.png)
+![screenshot](https://github.com/mono424/oex/blob/main/images/screenshot.png?raw=true)
 
-## Get Started
+## How to use
 
-See Example to see how it works.
+### 🔎 Setup
 
+Add the dependency to pubspec.yaml.
+
+```yaml
+dependencies:
+  [...]
+  oex: ^0.0.3
+```
+
+and import it.
+
+```dart
+import 'package:oex/oex.dart';
+```
+
+### 🔎 Discover Engines
+
+```dart
+List<OEXEngine> result = await OEX.search();
+print(result);
+```
+
+### 🗣️ Interact with Engines
+
+```dart
+Stream<String> stdout = await engine.start();
+stdout.listen((out) {
+    print(out);
+});
+
+Future.delayed(Duration(milliseconds: 500));
+engine.send("uci");
+```
+
+## Additional information
+
+This package is used in [WhitePawn](https://whitepawn.app) in production.
+
+Every contribution is very welcome.
+
+Cheers 🥂
