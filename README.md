@@ -19,7 +19,7 @@ Add the dependency to pubspec.yaml.
 ```yaml
 dependencies:
   [...]
-  oex: ^0.1.0
+  oex: ^0.1.1
 ```
 
 and import it.
