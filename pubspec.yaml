@@ -1,6 +1,6 @@
 name: oex
 description: A Flutter Plugin, which lets you search OEX Chess Engines
-version: 0.0.2
+version: 0.0.3
 homepage: https://khad.im
 
 environment:
